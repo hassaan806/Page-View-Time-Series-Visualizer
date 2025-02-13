@@ -3,7 +3,6 @@ import pandas as pd
 import seaborn as sns
 import numpy as np
 
-# Import data
 df = pd.read_csv("fcc-forum-pageviews.csv", parse_dates=['date'], index_col='date')
 
 # Clean data by removing top and bottom 2.5% outliers
