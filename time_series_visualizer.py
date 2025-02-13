@@ -31,7 +31,6 @@ def draw_bar_plot():
     # Create pivot table
     df_bar = df_bar.groupby(['year', 'month'])['value'].mean().unstack()
     
-    # Draw bar chart
     fig = df_bar.plot(kind="bar", figsize=(12, 6)).figure
     plt.xlabel("Years")
     plt.ylabel("Average Page Views")
